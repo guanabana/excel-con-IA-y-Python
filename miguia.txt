@@ -1,0 +1,51 @@
+VAMOS A INSTALAR COMPLEMENTOS EN EXCEL XLWINGS, PYXLL
+
+--------------INSTALACION XLWINGS------------------
+Documentación oficial: https://docs.xlwings.org/en/stable/installation.html
+ 
+1. Crear entorno con conda prompt.
+
+(base) C:\Users\Administrador>cd C:\ProgramData\anaconda3\envs
+(base) C:\ProgramData\anaconda3\envs>conda create -n mi_entorno_excel python=3.9
+
+2. Activar Entorno.
+(base) C:\ProgramData\anaconda3\envs>conda activate mi_entorno_excel
+   
+	Asegurarse que esta en el entorno que se creo -> Cambia de base a su entorno.
+	(mi_entorno_excel) C:\ProgramData\anaconda3\envs>
+
+3. Instalar Complemento xlwings
+(mi_entorno_excel) C:\ProgramData\anaconda3\envs>conda install -c conda-forge xlwings
+ Desplegará lista de package necesarios para instalarse y actualizarse.
+ Porceder con Yes
+
+4. Implementar el xlwings 
+ (mi_entorno_excel) C:\ProgramData\anaconda3\envs>xlwings addin install
+
+5. Abrir nuevo libro de excel y alli verás en el ribbon el complemento instalado con las opciones en la interfaz para usar Python :)
+
+--------------INSTALACION PYXLL------------------
+
+1.En el entorno creado usar pip para instalar el complemento - versión TRIAL por 30 días
+Documentación oficial: https://www.pyxll.com/
+
+ (mi_entorno_excel) C:\ProgramData\anaconda3\envs>pip install pyxll
+ (mi_entorno_excel) C:\ProgramData\anaconda3\envs>pip install --upgrade pyxll
+ Opcionalmente para Open Source puede ser ppenpyxl pero solo soporta .xlsx o directamente Pandas con openpyxl o xlrd
+
+2.Descargar el instalador de Pyxll en tu PC
+ 
+Ir a la web https://www.pyxll.com/ y dar clic en Try PyXLL fro free
+Desplegar menu PRODUCT, seleccionar DOWNLOAD para descargarlo.
+LLenar los datos-- recordar que la versión depython es mayor a 3.7 y Excel >= 2016 en el form te pide versión en bit 64 o la que se tenga.
+
+--------------RESTAURAR BASE DE DATOS SQL------------------
+
+Restaura el archivo .bak
+
+--------------CONECTAR PORWER BI DESKTOP CON BASE DE DATOS------------------
+Ingresar el Usuario y Contraseña de la Base de Datos
+El modo de Conectividad: Importar
+
+
+--------------IMPORTAR TABLAS A POWER BI------------------
